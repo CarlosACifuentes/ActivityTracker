@@ -1,24 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWb-mm-R7p">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD724_W2022_Assign4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRT-cT-FIb">
+                                <rect key="frame" x="167" y="713" width="70" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Cbu-sX-5Q6"/>
+                                    <constraint firstAttribute="height" constant="40" id="iVg-fE-CZc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.3305666364" green="1" blue="0.45382581389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Go!">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="E8g-Cp-K32" kind="show" id="29F-tG-UBH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xRT-cT-FIb" secondAttribute="trailing" constant="153" id="D8b-RM-lF2"/>
+                            <constraint firstItem="xRT-cT-FIb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="343" id="bvz-0B-i0C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xRT-cT-FIb" secondAttribute="trailing" constant="343" id="ctZ-zN-zyw"/>
+                            <constraint firstItem="xRT-cT-FIb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="jSb-gu-HXT"/>
+                            <constraint firstItem="xRT-cT-FIb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="268" id="sOs-wl-LRO"/>
+                            <constraint firstItem="xRT-cT-FIb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="625" id="yFQ-IA-2p7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="D8b-RM-lF2"/>
+                                <exclude reference="ctZ-zN-zyw"/>
+                                <exclude reference="bvz-0B-i0C"/>
+                                <exclude reference="jSb-gu-HXT"/>
+                                <exclude reference="sOs-wl-LRO"/>
+                                <exclude reference="yFQ-IA-2p7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="ctZ-zN-zyw"/>
+                                <include reference="bvz-0B-i0C"/>
+                                <include reference="sOs-wl-LRO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="D8b-RM-lF2"/>
+                                <include reference="jSb-gu-HXT"/>
+                                <include reference="yFQ-IA-2p7"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="A2i-nE-4rI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="938.46153846153845" y="65.402843601895725"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="lga-eP-iv5">
+            <objects>
+                <viewController id="E8g-Cp-K32" customClass="MapViewController" customModule="MAPD724_W2022_Assign4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjZ-1d-z7W">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f5j-kQ-mzW">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <connections>
+                                    <outlet property="delegate" destination="E8g-Cp-K32" id="xq6-G4-xZH"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I5b-y4-fcE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f5j-kQ-mzW" secondAttribute="trailing" id="AyS-nK-xgI"/>
+                            <constraint firstAttribute="trailing" secondItem="f5j-kQ-mzW" secondAttribute="trailing" id="QqS-Hz-TG4"/>
+                            <constraint firstAttribute="bottom" secondItem="f5j-kQ-mzW" secondAttribute="bottom" id="dQb-oY-a9R"/>
+                            <constraint firstItem="f5j-kQ-mzW" firstAttribute="top" secondItem="bjZ-1d-z7W" secondAttribute="top" id="fge-Yy-Efi"/>
+                            <constraint firstItem="f5j-kQ-mzW" firstAttribute="leading" secondItem="bjZ-1d-z7W" secondAttribute="leading" id="kWB-Ij-Ixv"/>
+                            <constraint firstItem="f5j-kQ-mzW" firstAttribute="top" secondItem="bjZ-1d-z7W" secondAttribute="top" id="rbU-gj-Qbu"/>
+                            <constraint firstItem="f5j-kQ-mzW" firstAttribute="leading" secondItem="bjZ-1d-z7W" secondAttribute="leading" id="sBg-MM-anM"/>
+                            <constraint firstAttribute="bottom" secondItem="f5j-kQ-mzW" secondAttribute="bottom" id="tke-mN-APb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AyS-nK-xgI"/>
+                                <exclude reference="QqS-Hz-TG4"/>
+                                <exclude reference="dQb-oY-a9R"/>
+                                <exclude reference="fge-Yy-Efi"/>
+                                <exclude reference="kWB-Ij-Ixv"/>
+                                <exclude reference="rbU-gj-Qbu"/>
+                                <exclude reference="sBg-MM-anM"/>
+                                <exclude reference="tke-mN-APb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="AyS-nK-xgI"/>
+                                <include reference="dQb-oY-a9R"/>
+                                <include reference="rbU-gj-Qbu"/>
+                                <include reference="sBg-MM-anM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="QqS-Hz-TG4"/>
+                                <include reference="fge-Yy-Efi"/>
+                                <include reference="kWB-Ij-Ixv"/>
+                                <include reference="tke-mN-APb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="u2V-bl-EFj"/>
+                    <connections>
+                        <outlet property="mapView" destination="f5j-kQ-mzW" id="4Uk-BF-LK6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWD-Pu-C7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1898.1042654028436" y="63.076923076923073"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mz1-Jc-39D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eWb-mm-R7p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D7r-fW-ezR">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d0R-Ip-8sX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6My-nm-hAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="65.625"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
