@@ -23,23 +23,17 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate {
     private var elapsedTime = 0
     private var timer = Timer()
     
+
+    // Add new workout polylines
+    var polylines: [MKPolyline] = []
+    private var formattedNewLocations: [CLLocationCoordinate2D] = []
+       
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // check authorization
         locationManager.checkLocationAuthorization()
         
-//        let loc = CLLocationCoordinate2DMake(34.927752,-120.217608)
-//        let span = MKCoordinateSpan(latitudeDelta: 0.015, longitudeDelta: 0.015)
-//        let reg = MKCoordinateRegion(center:loc, span:span)
-//        mapView.region = reg
-//
-//        //marker
-//        let ann = MKPointAnnotation()
-//        ann.coordinate = loc
-//        ann.title = "Park here"
-//        ann.subtitle = "Fun awaits down the road!"
-//        mapView.addAnnotation(ann)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -109,6 +103,7 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate {
             mapView.userTrackingMode = .follow
         }
         
+        //update runDistance and current run ovelay on map
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             if startLocation == nil {
                 startLocation = locations.first
@@ -117,5 +112,16 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate {
                 self.totalKmLabel.text = String(runDistance)
             }
             endLocation = locations.last
+            
+            //update current run overaly on the map - polylines
+            // Format locations
+            let formattedLocation = CLLocationCoordinate2D(
+                latitude: endLocation.coordinate.latitude,
+                longitude: endLocation.coordinate.longitude
+            )
+            formattedNewLocations.append(formattedLocation)
+            let newPolyline = MKPolyline(coordinates: formattedNewLocations, count: formattedNewLocations.count)
+            polylines.append(newPolyline)
+            mapView.addOverlays(polylines)
         }
     }
