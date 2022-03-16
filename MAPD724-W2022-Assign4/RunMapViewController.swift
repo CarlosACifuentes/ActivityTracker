@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class RunMapViewController: UIViewController, CLLocationManagerDelegate {
+class RunMapViewController: UIViewController, CLLocationManagerDelegate{
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var elapsedTimeLabel: UILabel!
@@ -27,6 +27,7 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate {
     // Add new workout polylines
     var polylines: [MKPolyline] = []
     private var formattedNewLocations: [CLLocationCoordinate2D] = []
+    
        
     
     override func viewDidLoad() {
@@ -109,10 +110,11 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate {
                 startLocation = locations.first
             } else if let location = locations.last{
                 runDistance += endLocation.distance(from: location)
-                self.totalKmLabel.text = String(runDistance)
+                //km with only 1 decimal for metes
+                self.totalKmLabel.text = String(format: "%.1f", runDistance/1000)
             }
             endLocation = locations.last
-            
+
             //update current run overaly on the map - polylines
             // Format locations
             let formattedLocation = CLLocationCoordinate2D(
@@ -120,8 +122,21 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate {
                 longitude: endLocation.coordinate.longitude
             )
             formattedNewLocations.append(formattedLocation)
+
             let newPolyline = MKPolyline(coordinates: formattedNewLocations, count: formattedNewLocations.count)
             polylines.append(newPolyline)
-            mapView.addOverlays(polylines)
+            mapView.addOverlay(newPolyline)
+
         }
+        
+        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            var lineRenderer = MKPolylineRenderer()
+            if let polyline = overlay as? MKPolyline {
+                lineRenderer = MKPolylineRenderer(polyline: polyline)
+                lineRenderer.strokeColor = .blue
+                lineRenderer.lineWidth = 2.0
+            }
+            return lineRenderer
+        }
+        
     }

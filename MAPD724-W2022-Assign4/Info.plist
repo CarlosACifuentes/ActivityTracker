@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app requires GPS to track your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This app requires GPS to track your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app needs your location to track your position</string>
+	<string>This app needs your location to track your location</string>
 	<key>CFBundle identifier</key>
 	<string></string>
 	<key>UIApplicationSceneManifest</key>
