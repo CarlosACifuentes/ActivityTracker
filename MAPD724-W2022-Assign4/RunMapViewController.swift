@@ -19,6 +19,7 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     private var startLocation: CLLocation!
     private var endLocation: CLLocation!
     
+    // Add record variables for run distance and elapsed time
     private var runDistance = 0.0
     private var elapsedTime = 0
     private var timer = Timer()
@@ -32,9 +33,6 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // check authorization
-        locationManager.checkLocationAuthorization()
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -47,32 +45,48 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
         stopRunning()
         super.viewWillDisappear(animated)
     }
-
+    
+    //stop button functionality
     @IBAction func onStopButtonClick(_ sender: UIButton) {
-        self.stopRunning()
-        self.navigationController?.popViewController(animated: true)
+        let confirmAlert = UIAlertController(title: "Stop Running", message: "Are you sure you want to stop?.", preferredStyle: UIAlertController.Style.alert)
+
+        confirmAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                self.stopRunning()
+                self.navigationController?.popViewController(animated: true)
+            }))
+
+        confirmAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+                  
+            }))
+
+            self.present(confirmAlert, animated: true, completion: nil)
     }
     
+    //function to start running
     private func startRunning(){
         locationManager.manager.startUpdatingLocation()
         startTimer()
     }
     
+    //function to start the timer
     private func startTimer(){
         elapsedTimeLabel.text = self.getTimeString(elapsedTime: self.elapsedTime)
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
+    //function to stop running
     private func stopRunning(){
         locationManager.manager.stopUpdatingLocation()
         stopTimer()
     }
     
+    //function to stop the timer
     private func stopTimer(){
         timer.invalidate()
         elapsedTime = 0
     }
     
+    //function to ge the time in string format fiven an Int value
     private func getTimeString (elapsedTime: Int) -> String{
         let hours = elapsedTime / 3600
         let minutes = (elapsedTime % 3600) / 60
@@ -89,6 +103,7 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
+    //updates timer by 1 second
     @objc private func updateTimer(){
         self.elapsedTime += 1
         elapsedTimeLabel.text = self.getTimeString(elapsedTime: self.elapsedTime)
@@ -96,7 +111,7 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     
     
 }
-    
+    //MKMapViewDelegate
     extension RunMapViewController: MKMapViewDelegate {
         // set user location and follow
         func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
@@ -122,13 +137,15 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
                 longitude: endLocation.coordinate.longitude
             )
             formattedNewLocations.append(formattedLocation)
-
+            
+            //Add new polyline to map
             let newPolyline = MKPolyline(coordinates: formattedNewLocations, count: formattedNewLocations.count)
             polylines.append(newPolyline)
             mapView.addOverlay(newPolyline)
 
         }
         
+        //function to render polylines
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             var lineRenderer = MKPolylineRenderer()
             if let polyline = overlay as? MKPolyline {
