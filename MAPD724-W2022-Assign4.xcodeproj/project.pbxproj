@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		032BD21327E10BAD0055BD42 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032BD21227E10BAD0055BD42 /* RecordsViewController.swift */; };
 		032BD21527E10C7B0055BD42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032BD21427E10C7B0055BD42 /* LocationManager.swift */; };
+		03853BE527E3C2AD00B100AD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03853BE427E3C2AD00B100AD /* SettingsViewController.swift */; };
 		03C1851C27DB93F9009A5CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1851B27DB93F9009A5CAE /* AppDelegate.swift */; };
 		03C1851E27DB93F9009A5CAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1851D27DB93F9009A5CAE /* SceneDelegate.swift */; };
 		03C1852027DB93F9009A5CAE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1851F27DB93F9009A5CAE /* MainViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		032BD21227E10BAD0055BD42 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 		032BD21427E10C7B0055BD42 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		03853BE427E3C2AD00B100AD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		03C1851827DB93F9009A5CAE /* MAPD724-W2022-Assign4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-Assign4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C1851B27DB93F9009A5CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C1851D27DB93F9009A5CAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				03C1852927DB93FB009A5CAE /* Info.plist */,
 				03C1853127DB9D10009A5CAE /* RunMapViewController.swift */,
 				032BD21227E10BAD0055BD42 /* RecordsViewController.swift */,
+				03853BE427E3C2AD00B100AD /* SettingsViewController.swift */,
 				032BD21427E10C7B0055BD42 /* LocationManager.swift */,
 			);
 			path = "MAPD724-W2022-Assign4";
@@ -149,6 +152,7 @@
 			files = (
 				03C1852027DB93F9009A5CAE /* MainViewController.swift in Sources */,
 				03C1851C27DB93F9009A5CAE /* AppDelegate.swift in Sources */,
+				03853BE527E3C2AD00B100AD /* SettingsViewController.swift in Sources */,
 				032BD21527E10C7B0055BD42 /* LocationManager.swift in Sources */,
 				03C1851E27DB93F9009A5CAE /* SceneDelegate.swift in Sources */,
 				03C1853227DB9D10009A5CAE /* RunMapViewController.swift in Sources */,

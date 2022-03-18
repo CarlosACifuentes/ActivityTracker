@@ -12,6 +12,12 @@ class MainViewController: UIViewController {
     
     private var locationManager = LocationManager()
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        locationManager.checkLocationAuthorization()
+    }
+    
     @IBAction func onStartButtonClick(_ sender: UIButton) {
         // check authorization
         if locationManager.manager.authorizationStatus != .denied {
@@ -25,9 +31,14 @@ class MainViewController: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        locationManager.checkLocationAuthorization()
+
+    @IBAction func onRecordsButtonClick(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "recordSegue", sender: self)
+    }
+    
+    
+    @IBAction func onSettingsButtonClick(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "settingSegue", sender: self)
     }
 }
 

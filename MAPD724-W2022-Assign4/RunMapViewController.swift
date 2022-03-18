@@ -15,11 +15,11 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var elapsedTimeLabel: UILabel!
     @IBOutlet weak var totalKmLabel: UILabel!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var speedLabel: UILabel!
     private var locationManager = LocationManager()
     private var startLocation: CLLocation!
     private var endLocation: CLLocation!
     
-    // Add record variables for run distance and elapsed time
     private var runDistance = 0.0
     private var elapsedTime = 0
     private var timer = Timer()
@@ -33,10 +33,13 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //hide back button for RunMapViewController
+        self.navigationItem.setHidesBackButton(true, animated: true);
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         locationManager.manager.delegate = self
         startRunning()
     }
@@ -86,7 +89,7 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
         elapsedTime = 0
     }
     
-    //function to ge the time in string format fiven an Int value
+    //function to ge the time in string format fiven an int value
     private func getTimeString (elapsedTime: Int) -> String{
         let hours = elapsedTime / 3600
         let minutes = (elapsedTime % 3600) / 60
@@ -127,6 +130,8 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
                 runDistance += endLocation.distance(from: location)
                 //km with only 1 decimal for metes
                 self.totalKmLabel.text = String(format: "%.1f", runDistance/1000)
+                
+                self.speedLabel.text = String(format: "%.1f",manager.location!.speed*18/5)
             }
             endLocation = locations.last
 
