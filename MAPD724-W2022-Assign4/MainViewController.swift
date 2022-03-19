@@ -29,7 +29,6 @@ class MainViewController: UIViewController {
                     listItems.set(self.userWeightTF.text, forKey: "userWeight")
                     //  Save
                     listItems.synchronize()
-                    print("Text field: \(String(describing: self.userWeightTF.text))")
                 }))
             self.present(alert, animated: true, completion: nil)
             

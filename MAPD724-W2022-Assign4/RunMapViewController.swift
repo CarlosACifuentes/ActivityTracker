@@ -16,6 +16,8 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var totalKmLabel: UILabel!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var speedLabel: UILabel!
+    
+    @IBOutlet weak var caloriesLabel: UILabel!
     private var locationManager = LocationManager()
     private var startLocation: CLLocation!
     private var endLocation: CLLocation!
@@ -23,18 +25,20 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     private var runDistance = 0.0
     private var elapsedTime = 0
     private var timer = Timer()
+    let listItems = UserDefaults.standard
     
 
     // Add new workout polylines
     var polylines: [MKPolyline] = []
     private var formattedNewLocations: [CLLocationCoordinate2D] = []
-    
+    var userWeight = 0.0
        
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //hide back button for RunMapViewController
         self.navigationItem.setHidesBackButton(true, animated: true);
+        userWeight = Double(listItems.string(forKey: "userWeight")!)!
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -106,10 +110,17 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
+    //function to ge the time in string format fiven an int value
+    private func getTimeInMinutes (elapsedTime: Int) -> Double{
+        return Double (elapsedTime % 3600)/60
+    }
+    
     //updates timer by 1 second
     @objc private func updateTimer(){
         self.elapsedTime += 1
         elapsedTimeLabel.text = self.getTimeString(elapsedTime: self.elapsedTime)
+        //MET = 15 equals to a running speed between 13/16km/h
+        caloriesLabel.text = String(format: "%.0f", self.getTimeInMinutes(elapsedTime: self.elapsedTime) * 3.5 * 15 * userWeight / 200)
     }
     
     

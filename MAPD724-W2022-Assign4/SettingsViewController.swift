@@ -20,7 +20,6 @@ class SettingsViewController: UIViewController{
         let tempVal = listItems.string(forKey: "userWeight")
         if(tempVal != nil) {
             self.weightLabel.text = tempVal
-            print("Text field: \(String(describing: tempVal))")
         }
     }
     
@@ -32,7 +31,6 @@ class SettingsViewController: UIViewController{
                 self.listItems.set(self.weightLabel.text, forKey: "userWeight")
                 //  Save
                 self.listItems.synchronize()
-                print("Text field: \(String(describing: self.weightLabel.text))")
             }))
         self.present(alert, animated: true, completion: nil)
         }
