@@ -119,8 +119,9 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     @objc private func updateTimer(){
         self.elapsedTime += 1
         elapsedTimeLabel.text = self.getTimeString(elapsedTime: self.elapsedTime)
-        //MET = 15 equals to a running speed between 13/16km/h
-        caloriesLabel.text = String(format: "%.0f", self.getTimeInMinutes(elapsedTime: self.elapsedTime) * 3.5 * 15 * userWeight / 200)
+        //MET for running = 9.8 @ 6mph-9.6km/h
+        // Formula for calories burned = minutes of activity * 3.5 * MET * user weight /200
+        caloriesLabel.text = String(format: "%.0f", self.getTimeInMinutes(elapsedTime: self.elapsedTime) * 3.5 * 9.8 * userWeight / 200)
     }
     
     
