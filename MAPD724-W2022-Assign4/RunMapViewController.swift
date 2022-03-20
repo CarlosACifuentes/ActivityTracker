@@ -124,6 +124,16 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
         caloriesLabel.text = String(format: "%.0f", self.getTimeInMinutes(elapsedTime: self.elapsedTime) * 3.5 * 9.8 * userWeight / 200)
     }
     
+    @IBAction func onMapTypeSelect(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+              case 0:
+                  mapView.mapType = .standard
+              case 1:
+                  mapView.mapType = .satellite
+              default:
+                  mapView.mapType = .hybrid
+              }
+    }
     
 }
     //MKMapViewDelegate
@@ -167,7 +177,12 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
             var lineRenderer = MKPolylineRenderer()
             if let polyline = overlay as? MKPolyline {
                 lineRenderer = MKPolylineRenderer(polyline: polyline)
-                lineRenderer.strokeColor = .blue
+                // if mapview maptype is standard the polyline is blue, else it is yellow
+                if mapView.mapType == .standard{
+                    lineRenderer.strokeColor = .blue
+                }else {
+                    lineRenderer.strokeColor = .yellow
+                }
                 lineRenderer.lineWidth = 2.0
             }
             return lineRenderer
