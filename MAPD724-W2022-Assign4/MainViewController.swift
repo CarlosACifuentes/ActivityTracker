@@ -1,9 +1,18 @@
-//
-//  ViewController.swift
-//  MAPD724-W2022-Assign4
-//
-//  Created by Walter Sancho on 11/03/2022.
-//
+/*
+App        : Assignment 2 - Frameworks App
+Version    : Part1
+--------------------------
+ Group #10
+--------------------------
+Author     : Walter Edgardo Sancho
+Student ID : 301202813
+--------------------------
+Author     : Carlos Cifuentes
+Student ID : 301140805
+--------------------------
+Date       : 03/25/2022 - Part 1
+--------------------------
+*/
 
 import UIKit
 
@@ -36,6 +45,7 @@ class MainViewController: UIViewController {
         }
     }
     
+    //function to handle the start button click
     @IBAction func onStartButtonClick(_ sender: UIButton) {
         // check authorization
         if locationManager.manager.authorizationStatus != .denied {
@@ -49,12 +59,12 @@ class MainViewController: UIViewController {
         }
     }
     
-
+    //function to handle the records button click
     @IBAction func onRecordsButtonClick(_ sender: UIButton) {
         self.performSegue(withIdentifier: "recordSegue", sender: self)
     }
     
-    
+    //function to handle the setttings button click
     @IBAction func onSettingsButtonClick(_ sender: UIButton) {
         self.performSegue(withIdentifier: "settingSegue", sender: self)
     }

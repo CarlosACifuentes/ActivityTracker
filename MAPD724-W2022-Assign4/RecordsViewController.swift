@@ -1,9 +1,18 @@
-//
-//  RecordsViewController.swift
-//  MAPD724-W2022-Assign4
-//
-//  Created by Walter Sancho on 15/03/2022.
-//
+/*
+App        : Assignment 2 - Frameworks App
+Version    : Part1
+--------------------------
+ Group #10
+--------------------------
+Author     : Walter Edgardo Sancho
+Student ID : 301202813
+--------------------------
+Author     : Carlos Cifuentes
+Student ID : 301140805
+--------------------------
+Date       : 03/25/2022 - Part 1
+--------------------------
+*/
 
 import UIKit
 
@@ -13,8 +22,6 @@ class RecordsViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //dummy tasks
-        records = ["Clean car", "Do laundry"]
     }
     
     // MARK: - Table view data source
@@ -32,6 +39,7 @@ class RecordsViewController: UITableViewController{
             tableView.reloadData()
         }
     
+    //function to show the records in the table view
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             // The Records List
             let cell = tableView.dequeueReusableCell(withIdentifier: "Record", for: indexPath) as! RecordCell
