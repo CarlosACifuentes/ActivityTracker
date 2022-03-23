@@ -51,5 +51,6 @@ class RecordsViewController: UITableViewController{
         
             return cell
         }
+
     
 }
