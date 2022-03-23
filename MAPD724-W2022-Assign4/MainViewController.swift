@@ -84,6 +84,10 @@ class MainViewController: UIViewController
             
             }
         }
+        else
+        {
+            self.performSegue(withIdentifier: "mapSegue", sender: self)
+        }
     }
     
 }
