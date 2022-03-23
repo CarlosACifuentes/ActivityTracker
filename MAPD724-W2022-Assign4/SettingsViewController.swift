@@ -37,10 +37,15 @@ class SettingsViewController: UIViewController{
         let alert = UIAlertController(title: "Please enter your Weight in kilograms", message: "You can modify it under settings", preferredStyle: .alert)
         alert.addTextField { (textField) in
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-                self.weightLabel.text = (alert?.textFields![0].text)! // Force unwrapping because we know it exists.
-                self.listItems.set(self.weightLabel.text, forKey: "userWeight")
-                //  Save
-                self.listItems.synchronize()
+                
+                if(alert?.textFields![0].text?.isEmpty == false)
+                {
+                    self.weightLabel.text = (alert?.textFields![0].text)! // Force unwrapping because we know it exists.
+               
+                    self.listItems.set(self.weightLabel.text, forKey: "userWeight")
+                    //  Save
+                    self.listItems.synchronize()
+                }
             }))
         self.present(alert, animated: true, completion: nil)
         }
