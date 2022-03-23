@@ -837,11 +837,15 @@ MC4wEA
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="u2V-bl-EFj"/>
                     <connections>
                         <outlet property="caloriesLabel" destination="9Je-4r-9XW" id="BrY-Og-Rd1"/>
+                        <outlet property="caloriesLabelLandscape" destination="U7m-a9-JXK" id="Wkb-ng-FWE"/>
                         <outlet property="elapsedTimeLabel" destination="tEe-fB-qCi" id="qbb-Jz-yvu"/>
+                        <outlet property="elapsedTimeLabelLandscape" destination="qqr-rj-5K2" id="EK7-Gh-Y5N"/>
                         <outlet property="mapView" destination="f5j-kQ-mzW" id="4Uk-BF-LK6"/>
                         <outlet property="speedLabel" destination="mdX-xg-ToO" id="Tgx-x2-Am7"/>
+                        <outlet property="speedLabelLandscape" destination="MJw-Tz-bU9" id="AIu-wd-1BB"/>
                         <outlet property="stopButton" destination="UzI-tg-A4N" id="4hq-qZ-RVU"/>
                         <outlet property="totalKmLabel" destination="wAl-B5-Xnl" id="OpP-Wt-sHg"/>
+                        <outlet property="totalKmLabelLandscape" destination="kOa-1s-z1X" id="PpF-yq-Yqp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWD-Pu-C7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1029,14 +1033,14 @@ MC4wEA
                                 <exclude reference="LiH-Jl-0Lh"/>
                                 <exclude reference="W7D-Px-c1s"/>
                                 <exclude reference="pFU-PJ-kpZ"/>
+                                <exclude reference="E6E-hi-sGy"/>
+                                <exclude reference="uhb-Os-Hup"/>
                                 <exclude reference="AwY-Z7-MxM"/>
                                 <exclude reference="WbX-xd-m8G"/>
                                 <exclude reference="efe-qW-Zwz"/>
                                 <exclude reference="hOR-tu-ZGd"/>
                                 <exclude reference="nbx-4u-ncs"/>
                                 <exclude reference="xnb-cD-s1R"/>
-                                <exclude reference="E6E-hi-sGy"/>
-                                <exclude reference="uhb-Os-Hup"/>
                                 <exclude reference="24l-dT-puQ"/>
                                 <exclude reference="9BC-ts-l2w"/>
                             </mask>
@@ -1049,10 +1053,10 @@ MC4wEA
                                 <include reference="5yg-k8-2gN"/>
                                 <include reference="W7D-Px-c1s"/>
                                 <include reference="pFU-PJ-kpZ"/>
+                                <include reference="uhb-Os-Hup"/>
                                 <include reference="AwY-Z7-MxM"/>
                                 <include reference="WbX-xd-m8G"/>
                                 <include reference="hOR-tu-ZGd"/>
-                                <include reference="uhb-Os-Hup"/>
                                 <include reference="9BC-ts-l2w"/>
                             </mask>
                         </variation>
@@ -1063,10 +1067,10 @@ MC4wEA
                                 <include reference="8Jz-WG-OJA"/>
                                 <include reference="KjM-mo-ZGP"/>
                                 <include reference="LiH-Jl-0Lh"/>
+                                <include reference="E6E-hi-sGy"/>
                                 <include reference="efe-qW-Zwz"/>
                                 <include reference="nbx-4u-ncs"/>
                                 <include reference="xnb-cD-s1R"/>
-                                <include reference="E6E-hi-sGy"/>
                                 <include reference="24l-dT-puQ"/>
                             </mask>
                         </variation>

@@ -27,6 +27,14 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var speedLabel: UILabel!
     
     @IBOutlet weak var caloriesLabel: UILabel!
+    
+    // Outlets for landscape labels.
+    @IBOutlet weak var elapsedTimeLabelLandscape: UILabel!
+    @IBOutlet weak var totalKmLabelLandscape: UILabel!
+    @IBOutlet weak var speedLabelLandscape: UILabel!
+    @IBOutlet weak var caloriesLabelLandscape: UILabel!
+    
+    
     private var locationManager = LocationManager()
     private var startLocation: CLLocation!
     private var endLocation: CLLocation!
@@ -87,6 +95,7 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     //function to start the timer
     private func startTimer(){
         elapsedTimeLabel.text = self.getTimeString(elapsedTime: self.elapsedTime)
+        elapsedTimeLabelLandscape.text = elapsedTimeLabel.text
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
@@ -128,9 +137,11 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     @objc private func updateTimer(){
         self.elapsedTime += 1
         elapsedTimeLabel.text = self.getTimeString(elapsedTime: self.elapsedTime)
+        elapsedTimeLabelLandscape.text = elapsedTimeLabel.text
         //MET for running = 9.8 @ 6mph-9.6km/h
         // Formula for calories burned = minutes of activity * 3.5 * MET * user weight /200
         caloriesLabel.text = String(format: "%.0f", self.getTimeInMinutes(elapsedTime: self.elapsedTime) * 3.5 * 9.8 * userWeight / 200)
+        caloriesLabelLandscape.text = caloriesLabel.text
     }
     
     @IBAction func onMapTypeSelect(_ sender: UISegmentedControl) {
@@ -161,8 +172,10 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
                 runDistance += endLocation.distance(from: location)
                 //km with only 1 decimal for metes
                 self.totalKmLabel.text = String(format: "%.1f", runDistance/1000)
+                self.totalKmLabelLandscape.text = self.totalKmLabel.text
                 
                 self.speedLabel.text = String(format: "%.1f",manager.location!.speed*18/5)
+                self.speedLabelLandscape.text = self.speedLabel.text
             }
             endLocation = locations.last
 
