@@ -18,10 +18,12 @@
 		03C1852527DB93FB009A5CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C1852427DB93FB009A5CAE /* Assets.xcassets */; };
 		03C1852827DB93FB009A5CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C1852627DB93FB009A5CAE /* LaunchScreen.storyboard */; };
 		03C1853227DB9D10009A5CAE /* RunMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1853127DB9D10009A5CAE /* RunMapViewController.swift */; };
+		17C0971F2E578E7B4CB7DF85 /* Pods_MAPD724_W2022_Assign4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34C12ACB4E910B9A6DEA569 /* Pods_MAPD724_W2022_Assign4.framework */; };
 		6B9B292227E9573B001EF3F2 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B9B291E27E9573B001EF3F2 /* Poppins-Medium.ttf */; };
 		6B9B292327E9573B001EF3F2 /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B9B291F27E9573B001EF3F2 /* BebasNeue-Regular.ttf */; };
 		6B9B292427E9573B001EF3F2 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B9B292027E9573B001EF3F2 /* Poppins-Regular.ttf */; };
 		6B9B292527E9573B001EF3F2 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B9B292127E9573B001EF3F2 /* Poppins-Bold.ttf */; };
+		6BBA87F627F3A202006A0CE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BBA87F527F3A202006A0CE9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +40,14 @@
 		03C1852727DB93FB009A5CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03C1852927DB93FB009A5CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03C1853127DB9D10009A5CAE /* RunMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunMapViewController.swift; sourceTree = "<group>"; };
+		66C7653D7A08BD16AA947589 /* Pods-MAPD724-W2022-Assign4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD724-W2022-Assign4.release.xcconfig"; path = "Target Support Files/Pods-MAPD724-W2022-Assign4/Pods-MAPD724-W2022-Assign4.release.xcconfig"; sourceTree = "<group>"; };
 		6B9B291E27E9573B001EF3F2 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		6B9B291F27E9573B001EF3F2 /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
 		6B9B292027E9573B001EF3F2 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		6B9B292127E9573B001EF3F2 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		6BBA87F527F3A202006A0CE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B34C12ACB4E910B9A6DEA569 /* Pods_MAPD724_W2022_Assign4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAPD724_W2022_Assign4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F998850DA047AA7F632B57 /* Pods-MAPD724-W2022-Assign4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD724-W2022-Assign4.debug.xcconfig"; path = "Target Support Files/Pods-MAPD724-W2022-Assign4/Pods-MAPD724-W2022-Assign4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C0971F2E578E7B4CB7DF85 /* Pods_MAPD724_W2022_Assign4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +67,8 @@
 			children = (
 				03C1851A27DB93F9009A5CAE /* MAPD724-W2022-Assign4 */,
 				03C1851927DB93F9009A5CAE /* Products */,
+				61F339646F5B252704F1EC04 /* Pods */,
+				9F914CF667A547BB6115D4CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +96,18 @@
 				03853BE427E3C2AD00B100AD /* SettingsViewController.swift */,
 				032BD21427E10C7B0055BD42 /* LocationManager.swift */,
 				03853BE627E42ADC00B100AD /* RecordCell.swift */,
+				6BBA87F527F3A202006A0CE9 /* GoogleService-Info.plist */,
 			);
 			path = "MAPD724-W2022-Assign4";
+			sourceTree = "<group>";
+		};
+		61F339646F5B252704F1EC04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2F998850DA047AA7F632B57 /* Pods-MAPD724-W2022-Assign4.debug.xcconfig */,
+				66C7653D7A08BD16AA947589 /* Pods-MAPD724-W2022-Assign4.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		6B9B291D27E9573B001EF3F2 /* fonts */ = {
@@ -102,6 +121,14 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		9F914CF667A547BB6115D4CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B34C12ACB4E910B9A6DEA569 /* Pods_MAPD724_W2022_Assign4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03C1852C27DB93FB009A5CAE /* Build configuration list for PBXNativeTarget "MAPD724-W2022-Assign4" */;
 			buildPhases = (
+				C5629E22C76905241CF7A4DC /* [CP] Check Pods Manifest.lock */,
 				03C1851427DB93F9009A5CAE /* Sources */,
 				03C1851527DB93F9009A5CAE /* Frameworks */,
 				03C1851627DB93F9009A5CAE /* Resources */,
+				FE3391A196680A4B67BC4B54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B9B292327E9573B001EF3F2 /* BebasNeue-Regular.ttf in Resources */,
+				6BBA87F627F3A202006A0CE9 /* GoogleService-Info.plist in Resources */,
 				03C1852827DB93FB009A5CAE /* LaunchScreen.storyboard in Resources */,
 				6B9B292527E9573B001EF3F2 /* Poppins-Bold.ttf in Resources */,
 				6B9B292227E9573B001EF3F2 /* Poppins-Medium.ttf in Resources */,
@@ -171,6 +201,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5629E22C76905241CF7A4DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MAPD724-W2022-Assign4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE3391A196680A4B67BC4B54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAPD724-W2022-Assign4/Pods-MAPD724-W2022-Assign4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAPD724-W2022-Assign4/Pods-MAPD724-W2022-Assign4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MAPD724-W2022-Assign4/Pods-MAPD724-W2022-Assign4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03C1851427DB93F9009A5CAE /* Sources */ = {
@@ -328,6 +400,7 @@
 		};
 		03C1852D27DB93FB009A5CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F998850DA047AA7F632B57 /* Pods-MAPD724-W2022-Assign4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -357,6 +430,7 @@
 		};
 		03C1852E27DB93FB009A5CAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C7653D7A08BD16AA947589 /* Pods-MAPD724-W2022-Assign4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

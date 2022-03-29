@@ -163,7 +163,6 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
             mapView.showsUserLocation = true
             mapView.userTrackingMode = .follow
         }
-        
         //update runDistance and current run ovelay on map
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             if startLocation == nil {
@@ -186,7 +185,6 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
                 longitude: endLocation.coordinate.longitude
             )
             formattedNewLocations.append(formattedLocation)
-            
             //Add new polyline to map
             let newPolyline = MKPolyline(coordinates: formattedNewLocations, count: formattedNewLocations.count)
             polylines.append(newPolyline)
