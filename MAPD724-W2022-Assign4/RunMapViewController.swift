@@ -17,6 +17,7 @@ Date       : 03/25/2022 - Part 1
 import UIKit
 import MapKit
 import CoreLocation
+import FirebaseDatabase
 
 class RunMapViewController: UIViewController, CLLocationManagerDelegate{
 
@@ -49,13 +50,18 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
     var polylines: [MKPolyline] = []
     private var formattedNewLocations: [CLLocationCoordinate2D] = []
     var userWeight = 0.0
-       
+    
+    // reference to the Data structure
+    private var newRun = [Runs]()
+    //var ref: DatabaseReference!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //hide back button for RunMapViewController
         self.navigationItem.setHidesBackButton(true, animated: true);
         userWeight = Double(listItems.string(forKey: "userWeight")!)!
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -76,6 +82,7 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
 
         confirmAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                 self.stopRunning()
+                self.saveRun()
                 self.navigationController?.popViewController(animated: true)
             }))
 
@@ -104,6 +111,29 @@ class RunMapViewController: UIViewController, CLLocationManagerDelegate{
         locationManager.manager.stopUpdatingLocation()
         stopTimer()
     }
+    
+    //function to save the run in the database
+    private func saveRun()
+    {
+        //reference to database
+        let runId = UUID().uuidString
+        let tempDate = Self.dateFormatter.string(from: NSDate.now)
+        let ref = Database.database().reference()
+        ref.child("Runs/" + runId).setValue([
+            "date": tempDate,
+            "duration":self.elapsedTimeLabel.text,
+            "distance": self.totalKmLabel.text,
+            "velocity": self.speedLabel.text,
+            "calories": self.caloriesLabel.text])
+
+    }
+    
+    static let dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        return dateFormatter
+    }()
     
     //function to stop the timer
     private func stopTimer(){

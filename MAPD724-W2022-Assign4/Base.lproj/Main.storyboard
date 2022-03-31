@@ -343,7 +343,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr2-pZ-8KE" userLabel="EXERCISE IN PROGRESS - Port">
-                                <rect key="frame" x="104" y="55" width="206.5" height="36"/>
+                                <rect key="frame" x="31" y="55" width="352.5" height="35"/>
                                 <attributedString key="attributedText">
                                     <fragment content="EXERCISE IN PROGRESS">
                                         <attributes>
@@ -543,13 +543,13 @@ MC4wEA
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="epm-Fa-yBZ" userLabel="Info_StackView_Port">
-                                <rect key="frame" x="33.5" y="106" width="347" height="51.5"/>
+                                <rect key="frame" x="33.5" y="105" width="347" height="47"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Lv-bd-3zz">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V91-sH-1CD">
-                                                <rect key="frame" x="0.0" y="0.0" width="64" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="16.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Distance">
                                                         <attributes>
@@ -562,10 +562,10 @@ MC4wEA
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tm-Mp-gqY">
-                                                <rect key="frame" x="0.0" y="20" width="64" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="16.5" width="79.5" height="30.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAl-B5-Xnl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="31.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAl-B5-Xnl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="30.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="0.0">
                                                                 <attributes>
@@ -577,8 +577,8 @@ MC4wEA
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3t-DC-tYs">
-                                                        <rect key="frame" x="35" y="0.0" width="29" height="31.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3t-DC-tYs">
+                                                        <rect key="frame" x="36.5" y="0.0" width="43" height="30.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="km ">
                                                                 <attributes>
@@ -595,10 +595,10 @@ MC4wEA
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Blc-EL-eA0">
-                                        <rect key="frame" x="94" y="0.0" width="72" height="51.5"/>
+                                        <rect key="frame" x="109.5" y="0.0" width="60.5" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="veG-PM-M7p">
-                                                <rect key="frame" x="0.0" y="0.0" width="72" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60.5" height="16.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Speed">
@@ -612,10 +612,10 @@ MC4wEA
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z9-CI-00n">
-                                                <rect key="frame" x="0.0" y="20" width="72" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="16.5" width="60.5" height="30.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdX-xg-ToO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="26" height="31.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdX-xg-ToO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="30.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment>
                                                                 <string key="content" base64-UTF8="YES">
@@ -630,8 +630,8 @@ MC4wEA
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObU-YV-drD">
-                                                        <rect key="frame" x="26" y="0.0" width="46" height="31.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObU-YV-drD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="30.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Km/h">
                                                                 <attributes>
@@ -648,10 +648,10 @@ MC4wEA
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bvt-x8-LTu">
-                                        <rect key="frame" x="196" y="0.0" width="46.5" height="51.5"/>
+                                        <rect key="frame" x="200" y="0.0" width="65.5" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UOc-Oc-OeF">
-                                                <rect key="frame" x="0.0" y="0.0" width="46.5" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="16.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Time">
@@ -665,7 +665,7 @@ MC4wEA
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="63" translatesAutoresizingMaskIntoConstraints="NO" id="tEe-fB-qCi">
-                                                <rect key="frame" x="0.0" y="20" width="46.5" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="16.5" width="65.5" height="30.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="00:00">
                                                         <attributes>
@@ -680,10 +680,10 @@ MC4wEA
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pge-mh-ZP7">
-                                        <rect key="frame" x="272.5" y="0.0" width="74.5" height="51.5"/>
+                                        <rect key="frame" x="295.5" y="0.0" width="51.5" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ja1-gn-KOS">
-                                                <rect key="frame" x="0.0" y="0.0" width="74.5" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="51.5" height="16.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Calories">
@@ -697,10 +697,10 @@ MC4wEA
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Qwg-24-9ti">
-                                                <rect key="frame" x="0.0" y="20" width="74.5" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="16.5" width="51.5" height="30.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Je-4r-9XW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="31.5" height="31.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Je-4r-9XW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="30.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="100">
                                                                 <attributes>
@@ -712,8 +712,8 @@ MC4wEA
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9L-Xd-7zC">
-                                                        <rect key="frame" x="34.5" y="0.0" width="40" height="31.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9L-Xd-7zC">
+                                                        <rect key="frame" x="3" y="0.0" width="48.5" height="30.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="KCal">
                                                                 <attributes>
@@ -731,7 +731,7 @@ MC4wEA
                                 </subviews>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FkW-PE-oXn" userLabel="Standard, Satellite, Hybrid - Port">
-                                <rect key="frame" x="82" y="172.5" width="250" height="32"/>
+                                <rect key="frame" x="82" y="167" width="250" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="udi-RA-6f4"/>
                                 </constraints>
@@ -874,48 +874,28 @@ MC4wEA
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zk2-uC-nEj">
                                             <rect key="frame" x="10" y="12" width="394" height="42.5"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="flI-SA-VLs" userLabel="Date Stack View">
-                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="42.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XBP-8s-cNU" userLabel="Date Stack View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="96" height="42.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yuj-dY-qUv" userLabel="DateTime Stack View">
-                                                            <rect key="frame" x="20" y="0.0" width="137" height="25.5"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJa-pd-ujj">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="85" height="25.5"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="85" id="rEF-n7-o3H"/>
-                                                                    </constraints>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="00/00/00">
-                                                                            <attributes>
-                                                                                <color key="NSColor" red="0.13725490196078433" green="0.19607843137254902" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <font key="NSFont" size="18" name="Poppins-Regular"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBZ-UO-jUV">
-                                                                    <rect key="frame" x="87" y="0.0" width="50" height="25.5"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="50" id="eEB-KQ-7vo"/>
-                                                                    </constraints>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="00:00">
-                                                                            <attributes>
-                                                                                <color key="NSColor" red="0.13725490196078433" green="0.19607843137254902" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <font key="NSFont" size="18" name="Poppins-Regular"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-We-pn6">
-                                                            <rect key="frame" x="45.5" y="25.5" width="86" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJa-pd-ujj">
+                                                            <rect key="frame" x="5.5" y="0.0" width="85" height="25.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="rEF-n7-o3H"/>
+                                                            </constraints>
                                                             <attributedString key="attributedText">
-                                                                <fragment content="Date and time">
+                                                                <fragment content="00/00/00">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.13725490196078433" green="0.19607843137254902" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="18" name="Poppins-Regular"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-We-pn6">
+                                                            <rect key="frame" x="34" y="25.5" width="28.5" height="17"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Date">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <font key="NSFont" size="12" name="Poppins-Regular"/>
@@ -927,11 +907,48 @@ MC4wEA
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mwo-5c-61t" userLabel="Distance Stack View">
-                                                    <rect key="frame" x="177" y="0.0" width="75" height="42.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q71-KW-HTw">
+                                                    <rect key="frame" x="96" y="0.0" width="108" height="42.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfd-wZ-lRs">
-                                                            <rect key="frame" x="24" y="0.0" width="26.5" height="25.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBZ-UO-jUV">
+                                                            <rect key="frame" x="29" y="0.0" width="50" height="25.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="eEB-KQ-7vo"/>
+                                                            </constraints>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="00:00">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.13725490196078433" green="0.19607843137254902" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="18" name="Poppins-Regular"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06k-4T-ehF">
+                                                            <rect key="frame" x="6.5" y="25.5" width="95" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="95" id="zHF-x6-qZ6"/>
+                                                            </constraints>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Duration (mins)">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="12" name="Poppins-Regular"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mwo-5c-61t" userLabel="Distance Stack View">
+                                                    <rect key="frame" x="204" y="0.0" width="65.5" height="42.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfd-wZ-lRs">
+                                                            <rect key="frame" x="19.5" y="0.0" width="26.5" height="25.5"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="0.0">
                                                                     <attributes>
@@ -943,8 +960,8 @@ MC4wEA
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-gR-gLD">
-                                                            <rect key="frame" x="8.5" y="25.5" width="58" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-gR-gLD">
+                                                            <rect key="frame" x="3.5" y="25.5" width="58" height="17"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Total kms">
                                                                     <attributes>
@@ -958,10 +975,10 @@ MC4wEA
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ya0-x8-2Xb" userLabel="Speed Stack View">
-                                                    <rect key="frame" x="252" y="0.0" width="142" height="42.5"/>
+                                                    <rect key="frame" x="269.5" y="0.0" width="124.5" height="42.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFl-CF-zqy">
-                                                            <rect key="frame" x="57.5" y="0.0" width="26.5" height="25.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFl-CF-zqy">
+                                                            <rect key="frame" x="49" y="0.0" width="26.5" height="25.5"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="0.0">
                                                                     <attributes>
@@ -972,8 +989,8 @@ MC4wEA
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FG5-Gq-8OX">
-                                                            <rect key="frame" x="16" y="25.5" width="110" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FG5-Gq-8OX">
+                                                            <rect key="frame" x="7" y="25.5" width="110" height="17"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Avg. Speed(km/h)">
                                                                     <attributes>

@@ -24,6 +24,7 @@
 		6B9B292427E9573B001EF3F2 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B9B292027E9573B001EF3F2 /* Poppins-Regular.ttf */; };
 		6B9B292527E9573B001EF3F2 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B9B292127E9573B001EF3F2 /* Poppins-Bold.ttf */; };
 		6BBA87F627F3A202006A0CE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BBA87F527F3A202006A0CE9 /* GoogleService-Info.plist */; };
+		6BE126B227F4F60400FB4132 /* RunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE126B127F4F60400FB4132 /* RunModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		6B9B292027E9573B001EF3F2 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		6B9B292127E9573B001EF3F2 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		6BBA87F527F3A202006A0CE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6BE126B127F4F60400FB4132 /* RunModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunModel.swift; sourceTree = "<group>"; };
 		B34C12ACB4E910B9A6DEA569 /* Pods_MAPD724_W2022_Assign4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAPD724_W2022_Assign4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F998850DA047AA7F632B57 /* Pods-MAPD724-W2022-Assign4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD724-W2022-Assign4.debug.xcconfig"; path = "Target Support Files/Pods-MAPD724-W2022-Assign4/Pods-MAPD724-W2022-Assign4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 				032BD21427E10C7B0055BD42 /* LocationManager.swift */,
 				03853BE627E42ADC00B100AD /* RecordCell.swift */,
 				6BBA87F527F3A202006A0CE9 /* GoogleService-Info.plist */,
+				6BE126B127F4F60400FB4132 /* RunModel.swift */,
 			);
 			path = "MAPD724-W2022-Assign4";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03C1852027DB93F9009A5CAE /* MainViewController.swift in Sources */,
+				6BE126B227F4F60400FB4132 /* RunModel.swift in Sources */,
 				03C1851C27DB93F9009A5CAE /* AppDelegate.swift in Sources */,
 				03853BE727E42ADC00B100AD /* RecordCell.swift in Sources */,
 				03853BE527E3C2AD00B100AD /* SettingsViewController.swift in Sources */,
